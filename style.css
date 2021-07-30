@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    width: 100%;
+    font-family: Montserrat, sans-serif;
+}
+
+
+header{
+    height: 100px;
+    background:#4c4541;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+    color:#ececec;
+   
+}
+
+.logo{
+    padding-left: 10%;
+    float: left;
+    line-height: 100px;
+}
+
+.logo a{
+    text-align: left;
+    text-decoration: none;
+    font-size: 30px;
+    color: #ececec;
+}
+
+nav{
+    padding-right:10%;
+    text-align: right;
+    line-height: 100px;
+}
+
+
+nav a{
+    text-decoration: none;
+    border:2px #ececec;
+    color:#ececec;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+nav a:hover{
+    color:#f6f499 ;
+    text-decoration: underline;
+}
+
+nav.menu-header ul li.btn{
+    display: inline-block ;
+    list-style-type:none ;
+}
+
+.banner-area{
+    width: 100%;
+    height: 750px;
+    position: relative;
+    top: 100px;
+    background-image: url(/images/keyboard.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner-area h1{
+    text-align: center;
+    color: #4c4541;
+    font-size: 50px;
+    padding-top: 300px;
+}
+
+h2{
+    text-align: center;
+}
+
+
+#presentation, #cv, #projets {
+    padding-left: 15%;
+    padding-right: 15%;
+} 
+
+#cv, #projets{
+    padding-top: 125px;
+}
+
+
+#presentation{
+    padding-top: 10em;
+}
+
+.competence i{
+    position: absolute;
+    left:15%;
+}
+
+.competence p{
+    padding-left: 2em;
+}
+
+.jauge {
+    margin-bottom: 0.75em;
+    width: 60%;
+    justify-content: flex-start;
+    border-radius: 100px;
+    height: 1em;
+    align-items: center;
+    display: flex;
+    transform-origin: left center;
+    background-color: #ececec;
+    position: relative;
+    border: #4c4541;
+}
+
+.jauge-html {
+    position: absolute;
+    background-color:#4c4541;
+    width: 0;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    animation: load 4s normal forwards;
+    height: 0.9em;
+}
+
+@keyframes load{
+    0%{
+        width: 0%;
+    }
+    
+    100%{
+        width: 70%;
+    }
+}
+ 
+
+
+#contact{
+    margin: 0 25% 1em 25%;
+    padding: 1em;
+    background-color: #8e99a4;
+    margin-top: 100px;
+    border-radius: 2em;
+    font-weight: bold;
+}
+
+form h2{
+    text-align: center;
+}
+
+form .separation{
+    margin: 1em 0 0 0;
+    width: 100%;
+    height: 2px;
+    background-color: #b8bcdc;
+    margin-bottom: 0.5em;
+    border-radius: 1px;
+}
+
+
+
+form .corps-formulaire{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.groupe{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+input{
+    margin-top: 5px;
+    padding: 10px 5px 10px 30px;
+    border: 2px solid #4c4541;
+    outline-color: #4c4541;
+    border-radius: 10px;
+    background-color: #b8bcdc;
+}
+
+.groupe i{
+    position: absolute;
+    top: 25px;
+    padding: 9px 8px;
+    color: #4c4541;
+}
+
+.gauche{
+    margin-left: 19%;
+}
+
+.droite{
+    margin-left: 10%;
+}
+
+.droite .groupe{
+    height: 100%;
+}
+
+textarea{
+    margin-top: 5px;
+    padding: 10px;
+    padding-right: 15em;
+    background-color: #b8bcdc;
+    border: 2px solid #4c4541;
+    outline-color: #4c4541;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+    height: 73%;
+}
+
+.foot-form{
+    text-align: center;
+    margin-top: 10px;
+}
+
+button{
+    color: #b8bcdc;
+    background-color: #4c4541;
+    font-size: 15px;
+    border:none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+.body-box h2{
+    padding-bottom: 1em;
+}
+
+footer{
+    height: 100px;
+    background-color: #4c4541;
+}
+
+.copyright{
+    line-height: 100px;
+    float: left;
+    text-align: left;
+    padding-left: 10%;
+    color: #ececec;
+}
+
+.social{
+    text-align: right;
+    height: 100px;
+}
+
+/* .opacity-color div{
+    background-color: #647c83;
+}
+
+.opacity-color div img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.opacity-color div:hover img{
+    opacity: 5;
+}
+ */
+
+.linkedin{
+    padding-top:10px;
+    padding-right: 10%;
+    width: 80px;
+    height: auto;
+}
+
